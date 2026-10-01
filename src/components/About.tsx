@@ -23,7 +23,7 @@ export function About() {
               signalétique intérieure et extérieure, agencement de magasins, stores bannes et fermetures.
             </p>
             <p>
-              Regrouper ces métiers permet de traiter votre projet de façon cohérente, de la conception de
+              L&apos;entreprise est installée au {site.address.street}, au Mans. Regrouper ces métiers permet de traiter votre projet de façon cohérente, de la conception de
               l&apos;enseigne jusqu&apos;à l&apos;installation et à la maintenance des équipements.
             </p>
           </div>

@@ -49,12 +49,19 @@ export default async function ServicePage({ params }: PageProps<"/[service]">) {
     url: absoluteUrl(`/${service.slug}`),
     inLanguage: "fr-FR",
     provider: {
-      "@type": "Organization",
+      "@type": "LocalBusiness",
       "@id": `${site.url}/#organisation`,
       name: site.name,
       telephone: site.phone.international,
       email: site.email.display,
       url: site.url,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: site.address.street,
+        postalCode: site.address.postalCode,
+        addressLocality: site.address.city,
+        addressCountry: site.address.country,
+      },
     },
   };
 

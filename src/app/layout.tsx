@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | Bourra Multiservices",
   },
   description:
-    "Découvrez Bourra Multiservices : enseignes, signalétique, agencement de magasins, stores bannes, rideaux métalliques et portes sectionnelles. Contactez-nous pour votre projet.",
+    "Découvrez Bourra Multiservices, au Mans : enseignes, signalétique, agencement de magasins, stores bannes, rideaux métalliques et portes sectionnelles. Contactez-nous pour votre projet.",
   applicationName: site.name,
   formatDetection: { telephone: false },
   openGraph: {

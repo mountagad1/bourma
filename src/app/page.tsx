@@ -10,7 +10,7 @@ import { absoluteUrl, jsonLd, site } from "@/lib/site";
 
 const title = "Bourra Multiservices | Enseignes, Signalétique et Fermetures";
 const description =
-  "Découvrez Bourra Multiservices : enseignes, signalétique, agencement de magasins, stores bannes, rideaux métalliques et portes sectionnelles. Contactez-nous pour votre projet.";
+  "Découvrez Bourra Multiservices, au Mans : enseignes, signalétique, agencement de magasins, stores bannes, rideaux métalliques et portes sectionnelles. Contactez-nous pour votre projet.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -21,17 +21,28 @@ export const metadata: Metadata = {
 };
 
 /**
- * Données structurées : uniquement des informations vérifiées.
- * Aucune adresse, coordonnée GPS, horaire ni avis n'est déclaré.
+ * Données structurées : uniquement des informations vérifiées
+ * (adresse et identifiants issus de l'avis de situation Insee / RNE).
+ * Aucune coordonnée GPS, horaire, zone d'intervention ni avis n'est déclaré.
  */
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "LocalBusiness",
       "@id": `${site.url}/#organisation`,
       name: site.name,
       alternateName: site.shortName,
+      legalName: site.legal.denomination,
+      vatID: site.legal.vat.replace(/\s/g, ""),
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: site.address.street,
+        postalCode: site.address.postalCode,
+        addressLocality: site.address.city,
+        addressCountry: site.address.country,
+      },
+      foundingDate: "2026-03-01",
       url: site.url,
       logo: absoluteUrl("/icon.svg"),
       image: absoluteUrl("/images/facade-bms.jpg"),

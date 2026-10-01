@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { services } from "@/content/services";
-import { site } from "@/lib/site";
+import { formattedAddress, site } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -42,6 +42,13 @@ export function Footer() {
                 {site.email.display}
               </a>
             </li>
+            <li>
+              <address className="not-italic text-muted">
+                {site.address.street}
+                <br />
+                {site.address.postalCode} {site.address.city}
+              </address>
+            </li>
             <li className="text-sm text-muted">Rendez-vous par e-mail ou téléphone.</li>
           </ul>
           <Link href="/#contact" className="btn btn-primary mt-6">
@@ -50,8 +57,15 @@ export function Footer() {
         </div>
       </div>
       <div className="container-site mt-12 flex flex-col gap-2 border-t border-white/[0.08] pt-6 text-sm text-muted sm:flex-row sm:justify-between">
-        <p>© {new Date().getFullYear()} {site.name}. Tous droits réservés.</p>
-        <p>Enseignes · Signalétique · Agencement · Fermetures</p>
+        <p>
+          © {new Date().getFullYear()} {site.name}. Tous droits réservés. SIRET {site.legal.siret}.
+        </p>
+        <p className="flex flex-wrap gap-x-4">
+          <span className="sr-only">Adresse : {formattedAddress}.</span>
+          <Link href="/mentions-legales" className="link-line hover:text-white">
+            Mentions légales
+          </Link>
+        </p>
       </div>
     </footer>
   );

@@ -22,7 +22,31 @@ export const site = {
    */
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.bourra-multiservices.fr").replace(/\/$/, ""),
   locale: "fr_FR",
+  /** Adresse du siège (avis de situation Insee / extrait RNE). */
+  address: {
+    street: "62 rue de la Pelouse",
+    postalCode: "72000",
+    city: "Le Mans",
+    country: "FR",
+  },
+  /** Informations légales (avis de situation Insee, extrait RNE). */
+  legal: {
+    denomination: "BOURA MULTISERVICES",
+    form: "Société à responsabilité limitée (SARL)",
+    siren: "102 985 322",
+    siret: "102 985 322 00019",
+    vat: "FR17 102 985 322",
+    naf: "43.29B — Autres travaux d'installation n.c.a.",
+    registration: "Immatriculée au Registre national des entreprises (RNE) le 22/04/2026",
+    createdAt: "01/03/2026",
+    /** Non communiqués : à renseigner avant la mise en ligne. */
+    capital: null as string | null,
+    publicationDirector: null as string | null,
+    host: null as { name: string; address: string; phone?: string } | null,
+  },
 } as const;
+
+export const formattedAddress = `${site.address.street}, ${site.address.postalCode} ${site.address.city}`;
 
 export function absoluteUrl(path = "/") {
   return `${site.url}${path}`;

@@ -40,6 +40,15 @@ npm run build && npm start
 * `prefers-reduced-motion: reduce` ou écran de moins de 540 px de haut : simple pile
   verticale, sans sticky ni transformation.
 
+## Emblème 3D du hero
+
+* `src/components/hero3d/` : toit BMS extrudé (Three.js + React Three Fiber),
+  posé sur la photo de façade avec une ombre portée douce.
+* Chargé par `import()` pendant un temps mort du navigateur : three.js (~240 ko gzip)
+  n'est pas dans le bundle initial et la photo reste l'élément LCP.
+* Rendu suspendu hors écran, statique en mouvement réduit, allégé sur mobile ;
+  rien n'est affiché sans WebGL ou en cas d'erreur (la photo suffit).
+
 ## Configuration de production
 
 Copier `.env.example` en `.env.local` (ou définir les variables chez l'hébergeur) :
@@ -55,7 +64,6 @@ Copier `.env.example` en `.env.local` (ou définir les variables chez l'héberge
 * Photos réelles de réalisations (galerie et services agencement, stores bannes,
   portes sectionnelles, maintenance — actuellement des illustrations signalées
   « photo à venir »).
-* Adresse postale, zone d'intervention et horaires vérifiés (non publiés pour
-  l'instant ; à ajouter avant de passer le JSON-LD en `LocalBusiness`).
-* Mentions légales (SIRET, hébergeur, responsable de publication) et politique de
-  confidentialité si un service d'envoi de formulaire est branché.
+* Zone d'intervention et horaires vérifiés (non publiés).
+* Mentions légales : capital social, directeur de la publication et hébergeur
+  (`site.legal` dans `src/lib/site.ts`, affichés « à compléter » d'ici là).

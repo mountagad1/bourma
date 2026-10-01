@@ -1,5 +1,5 @@
 import { ContactForm } from "@/components/ContactForm";
-import { MailIcon, PhoneIcon } from "@/components/icons";
+import { MailIcon, PhoneIcon, PinIcon } from "@/components/icons";
 import { site } from "@/lib/site";
 
 export function ContactSection() {
@@ -50,6 +50,17 @@ export function ContactSection() {
                   <span className="block break-all text-lg font-semibold group-hover:text-lime">{site.email.display}</span>
                 </span>
               </a>
+            </li>
+            <li className="flex items-center gap-4 rounded-[var(--radius)] border border-white/10 bg-navy p-5">
+              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-[var(--radius)] border border-white/20 text-lime">
+                <PinIcon className="h-6 w-6" />
+              </span>
+              <span>
+                <span className="block text-sm text-muted">Adresse</span>
+                <address className="not-italic text-lg font-semibold">
+                  {site.address.street}, {site.address.postalCode} {site.address.city}
+                </address>
+              </span>
             </li>
           </ul>
         </div>
