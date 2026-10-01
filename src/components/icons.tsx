@@ -65,3 +65,62 @@ export function PinIcon(props: IconProps) {
     </svg>
   );
 }
+
+/* Pictogrammes des services (bandeau carrousel) */
+
+export function BulbIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V17h5v-1.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z" />
+    </svg>
+  );
+}
+
+export function SignpostIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M12 3v18M5 6h11l3 3-3 3H5zM19 13H8l-3 3 3 3h11" />
+    </svg>
+  );
+}
+
+export function StoreIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M4 10v10h16V10M3 4h18l-1 6H4zM9 20v-6h6v6" />
+    </svg>
+  );
+}
+
+export function AwningIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M3 5h18M4 5l-1 7h18l-1-7M3 12a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0M5 15v6M19 15v6" />
+    </svg>
+  );
+}
+
+export function ShutterIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="3" y="3" width="18" height="5" rx="1" />
+      <path d="M5 8v13M19 8v13M5 11h14M5 14h14M5 17h14M5 20h14" />
+    </svg>
+  );
+}
+
+export function GarageDoorIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M2 10 12 3l10 7M4 9v12M20 9v12M7 12h10v9H7zM7 15h10M7 18h10" />
+    </svg>
+  );
+}
+
+export function WrenchIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z" />
+    </svg>
+  );
+}
