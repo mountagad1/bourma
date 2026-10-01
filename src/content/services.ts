@@ -18,6 +18,8 @@ export type ServiceVisual =
       alt: string;
       /** Cadrage CSS (object-position) pour garder le sujet visible. */
       position?: string;
+      /** Image d'illustration (pas une réalisation BMS) : un badge l'indique. */
+      illustrative?: boolean;
     }
   | {
       kind: "illustration";
@@ -42,11 +44,6 @@ export type Service = {
   related: string[];
 };
 
-const facade = {
-  src: "/images/facade-bms.jpg",
-  width: 1200,
-  height: 1600,
-} as const;
 
 export const services: Service[] = [
   {
@@ -101,9 +98,12 @@ export const services: Service[] = [
     },
     visual: {
       kind: "photo",
-      ...facade,
-      position: "50% 30%",
-      alt: "Enseigne en lettres découpées blanches et vertes « Boura Multiservices » sur un bandeau de façade noir",
+      src: "/images/services/enseignes.webp",
+      width: 1254,
+      height: 1254,
+      position: "60% 40%",
+      illustrative: true,
+      alt: "Enseigne lumineuse en lettres découpées rétroéclairées sur une façade noire, avec enseigne drapeau ronde et store banne",
     },
     related: ["signaletique", "agencement-magasin", "maintenance"],
   },
@@ -159,11 +159,12 @@ export const services: Service[] = [
     },
     visual: {
       kind: "photo",
-      src: "/images/signaletique-panneau.jpg",
-      width: 300,
-      height: 760,
-      position: "50% 20%",
-      alt: "Panneau de façade noir présentant les activités enseignes, signalétique et agencement avec pictogrammes verts",
+      src: "/images/services/signaletique.webp",
+      width: 1254,
+      height: 1254,
+      position: "30% 50%",
+      illustrative: true,
+      alt: "Totem d'entrée rétroéclairé et panneaux directionnels intérieurs suspendus et muraux à pictogrammes",
     },
     related: ["enseignes", "agencement-magasin"],
   },
@@ -210,9 +211,13 @@ export const services: Service[] = [
       ],
     },
     visual: {
-      kind: "illustration",
-      motif: "agencement",
-      alt: "Illustration technique d'un agencement de magasin avec comptoir et étagères",
+      kind: "photo",
+      src: "/images/services/agencement-magasin.webp",
+      width: 1254,
+      height: 1254,
+      position: "50% 50%",
+      illustrative: true,
+      alt: "Boutique agencée avec étagères en bois éclairées, portants métalliques noirs et comptoir en tasseaux rétroéclairé",
     },
     related: ["enseignes", "signaletique", "stores-bannes"],
   },
@@ -309,11 +314,12 @@ export const services: Service[] = [
     },
     visual: {
       kind: "photo",
-      src: "/images/rideau-metallique.jpg",
-      width: 520,
-      height: 760,
-      position: "50% 50%",
-      alt: "Rideau métallique à lames abaissé derrière une porte vitrée en aluminium anthracite",
+      src: "/images/services/rideaux-metalliques.webp",
+      width: 1254,
+      height: 1254,
+      position: "60% 50%",
+      illustrative: true,
+      alt: "Rideaux métalliques à lames gris anthracite sur la façade d'un local d'activité éclairé",
     },
     related: ["portes-sectionnelles", "maintenance", "stores-bannes"],
   },
@@ -360,9 +366,13 @@ export const services: Service[] = [
       ],
     },
     visual: {
-      kind: "illustration",
-      motif: "porte",
-      alt: "Illustration technique d'une porte sectionnelle à panneaux horizontaux",
+      kind: "photo",
+      src: "/images/services/portes-sectionnelles.webp",
+      width: 1254,
+      height: 1254,
+      position: "65% 50%",
+      illustrative: true,
+      alt: "Portes sectionnelles grises à hublots sur un bâtiment industriel, protégées par des bornes jaunes",
     },
     related: ["rideaux-metalliques", "maintenance"],
   },

@@ -24,6 +24,7 @@ export function ServiceVisual({ visual, sizes, className = "", imgClassName = ""
           className={`object-cover ${imgClassName}`}
           style={{ objectPosition: visual.position }}
         />
+        {visual.illustrative && <VisualTag>Photo d&apos;illustration</VisualTag>}
       </div>
     );
   }
@@ -31,9 +32,15 @@ export function ServiceVisual({ visual, sizes, className = "", imgClassName = ""
   return (
     <div className={`blueprint relative overflow-hidden ${className}`} role="img" aria-label={visual.alt}>
       <ServiceIllustration motif={visual.motif} className={`absolute inset-[8%] h-[84%] w-[84%] ${imgClassName}`} />
-      <span className="absolute bottom-3 right-3 rounded-sm bg-navy/80 px-2 py-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-muted">
-        Illustration · photo à venir
-      </span>
+      <VisualTag>Illustration · photo à venir</VisualTag>
     </div>
+  );
+}
+
+function VisualTag({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="absolute bottom-3 right-3 rounded-sm bg-navy/80 px-2 py-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-muted">
+      {children}
+    </span>
   );
 }

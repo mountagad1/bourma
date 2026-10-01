@@ -61,9 +61,10 @@ Copier `.env.example` en `.env.local` (ou définir les variables chez l'héberge
 
 ## Informations à compléter
 
-* Photos réelles de réalisations (galerie et services agencement, stores bannes,
-  portes sectionnelles, maintenance — actuellement des illustrations signalées
-  « photo à venir »).
+* Photos réelles de réalisations : la galerie attend des projets clients ; les
+  services enseignes, signalétique, agencement, rideaux et portes utilisent des
+  photos d'illustration (badge « Photo d'illustration », `public/images/services/`) ;
+  stores bannes et maintenance gardent une illustration « photo à venir ».
 * Zone d'intervention et horaires vérifiés (non publiés).
 * Mentions légales : capital social et directeur de la publication
   (`site.legal` dans `src/lib/site.ts`, affichés « à compléter » d'ici là).
