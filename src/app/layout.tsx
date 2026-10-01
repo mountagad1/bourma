@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     images: [
       {
-        url: "/images/og-bms.jpg",
+        url: "/images/og-bms-clean.jpg",
         width: 1200,
         height: 630,
         alt: "Façade et enseigne de Boura Multiservices",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/og-bms.jpg"],
+    images: ["/images/og-bms-clean.jpg"],
   },
   robots: { index: true, follow: true },
 };

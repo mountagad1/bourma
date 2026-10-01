@@ -68,14 +68,14 @@ export function Hero() {
         </div>
 
         <figure className="relative mx-auto w-full max-w-[34rem] lg:max-w-none">
-          <div className="hero-media relative aspect-[4/5] overflow-hidden rounded-[var(--radius)] bg-surface sm:aspect-[5/6] lg:aspect-[4/5] lg:max-h-[calc(100svh-var(--header-h)-6rem)] lg:w-auto">
+          <div className="hero-media relative aspect-square overflow-hidden rounded-[var(--radius)] bg-surface lg:max-h-[calc(100svh-var(--header-h)-6rem)] lg:w-auto">
             <Image
-              src="/images/facade-bms.jpg"
+              src="/images/facade-bms-clean.jpg"
               alt="Façade de Boura Multiservices : enseigne en lettres découpées vertes et blanches et panneaux présentant les services"
               fill
               preload
               sizes="(min-width: 1024px) 40vw, (min-width: 640px) 34rem, 100vw"
-              className="object-cover object-[50%_40%]"
+              className="object-cover object-center"
             />
             <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy/80 to-transparent" />
           </div>

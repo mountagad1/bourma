@@ -46,7 +46,7 @@ const structuredData = {
       hasMap: site.mapsUrl,
       url: site.url,
       logo: absoluteUrl("/icon.svg"),
-      image: absoluteUrl("/images/facade-bms.jpg"),
+      image: absoluteUrl("/images/facade-bms-clean.jpg"),
       telephone: site.phone.international,
       email: site.email.display,
       contactPoint: {

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const photos = [
   {
-    src: "/images/facade-bms.jpg",
-    position: "50% 36%",
+    src: "/images/facade-bms-clean.jpg",
+    position: "50% 20%",
     alt: "Bandeau de façade noir avec lettres découpées blanches et vertes formant « Boura Multiservices »",
     caption: "Enseigne en lettres découpées — façade BMS",
     span: "sm:col-span-2",
