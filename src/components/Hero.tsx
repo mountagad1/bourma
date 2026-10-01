@@ -2,8 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { HeroEmblem } from "@/components/hero3d/HeroEmblem";
-import { ArrowIcon, MailIcon, PhoneIcon } from "@/components/icons";
+import { ArrowIcon, CheckIcon, MailIcon, PhoneIcon } from "@/components/icons";
 import { site } from "@/lib/site";
+
+/** Reprise du panneau « savoir-faire » de la façade. */
+const savoirFaire = [
+  { label: "Pose", href: "/maintenance" },
+  { label: "Maintenance", href: "/maintenance" },
+  { label: "Store banne", href: "/stores-bannes" },
+  { label: "Rideau métallique", href: "/rideaux-metalliques" },
+  { label: "Porte sectionnelle", href: "/portes-sectionnelles" },
+];
 
 export function Hero() {
   return (
@@ -38,7 +47,22 @@ export function Hero() {
             dans vos projets professionnels.
           </p>
 
-          <div className="hero-in mt-9 flex flex-col gap-3 sm:flex-row" style={{ ["--i" as string]: 4 }}>
+          <ul
+            aria-label="Savoir-faire"
+            className="hero-in mt-6 flex flex-wrap gap-x-5 gap-y-2 font-display text-[1.05rem] font-semibold uppercase tracking-[0.05em] sm:text-lg"
+            style={{ ["--i" as string]: 4 }}
+          >
+            {savoirFaire.map((item) => (
+              <li key={item.label}>
+                <Link href={item.href} className="inline-flex items-center gap-1.5 text-white/90 transition-colors hover:text-lime">
+                  <CheckIcon className="h-[1.1em] w-[1.1em] text-lime" />
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <div className="hero-in mt-8 flex flex-col gap-3 sm:flex-row" style={{ ["--i" as string]: 5 }}>
             <Link href="/#contact" className="btn btn-primary">
               Demander un devis
               <ArrowIcon className="btn-arrow" />
@@ -49,8 +73,8 @@ export function Hero() {
           </div>
 
           <ul
-            className="hero-in mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-[0.975rem] sm:flex-row sm:gap-8"
-            style={{ ["--i" as string]: 5 }}
+            className="hero-in mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 text-[0.975rem] sm:flex-row sm:gap-8"
+            style={{ ["--i" as string]: 6 }}
           >
             <li>
               <a href={site.phone.href} className="inline-flex items-center gap-2.5 font-semibold hover:text-lime">
