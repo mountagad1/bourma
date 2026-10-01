@@ -47,7 +47,7 @@ export function About() {
           </div>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-[auto_1fr] lg:grid-cols-1 xl:grid-cols-[auto_1fr]">
+        <div className="grid gap-6">
           <div className="reveal rounded-[var(--radius)] border border-white/10 bg-navy p-7 sm:p-8">
             <h3 className="eyebrow">Savoir-faire</h3>
             <ul className="mt-5 space-y-3.5 font-display text-2xl font-bold uppercase leading-tight tracking-[0.02em]">
@@ -59,15 +59,18 @@ export function About() {
               ))}
             </ul>
           </div>
-          <div className="reveal relative mx-auto aspect-[38/94] w-44 overflow-hidden rounded-[var(--radius)] sm:w-48 xl:w-44">
+          <figure className="reveal relative aspect-square w-full overflow-hidden rounded-[var(--radius)] border border-white/10">
             <Image
-              src="/images/panneau-services.jpg"
-              alt="Panneau de façade BMS listant pose, maintenance, store banne, rideau métallique et porte sectionnelle"
+              src="/images/savoir-faire.webp"
+              alt="Montage illustrant les savoir-faire : store banne, rideau métallique, pose, porte sectionnelle et maintenance"
               fill
-              sizes="12rem"
+              sizes="(min-width: 1024px) 32rem, 100vw"
               className="object-cover"
             />
-          </div>
+            <figcaption className="absolute bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-sm bg-navy/80 px-2 py-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-muted">
+              Photo d&apos;illustration
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
