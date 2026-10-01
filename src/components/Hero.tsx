@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
+import { HeroEmblem } from "@/components/hero3d/HeroEmblem";
 import { ArrowIcon, MailIcon, PhoneIcon } from "@/components/icons";
 import { site } from "@/lib/site";
 
@@ -80,7 +81,9 @@ export function Hero() {
           </div>
           {/* Équerre verte, rappel du toit du logo */}
           <span aria-hidden="true" className="absolute -left-3 -top-3 h-16 w-16 border-l-[5px] border-t-[5px] border-lime" />
-          <figcaption className="absolute bottom-4 left-4 right-4 font-display text-sm font-semibold uppercase tracking-[0.14em] text-white/85">
+          {/* Emblème 3D chargé à la demande, posé sur la façade */}
+          <HeroEmblem className="absolute -bottom-8 -left-6 h-[44%] w-[58%] sm:-left-10 lg:-bottom-10 lg:-left-16" />
+          <figcaption className="absolute bottom-4 right-4 text-right font-display text-sm font-semibold uppercase tracking-[0.14em] text-white/85">
             Notre façade
           </figcaption>
         </figure>
