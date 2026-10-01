@@ -29,6 +29,8 @@ export const site = {
     city: "Le Mans",
     country: "FR",
   },
+  /** Lien Google Maps fourni par l'entreprise. */
+  mapsUrl: "https://maps.app.goo.gl/f2RWBXGDgkcvnZn2A",
   /** Informations légales (avis de situation Insee, extrait RNE). */
   legal: {
     denomination: "BOURA MULTISERVICES",

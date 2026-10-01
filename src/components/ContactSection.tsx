@@ -1,4 +1,5 @@
 import { ContactForm } from "@/components/ContactForm";
+import { LocationMap } from "@/components/LocationMap";
 import { MailIcon, PhoneIcon, PinIcon } from "@/components/icons";
 import { site } from "@/lib/site";
 
@@ -70,6 +71,22 @@ export function ContactSection() {
           <div className="mt-5">
             <ContactForm />
           </div>
+        </div>
+      </div>
+      <div className="container-site mt-14 sm:mt-20">
+        <div className="reveal grid gap-6 lg:grid-cols-[0.9fr_2.1fr] lg:items-end lg:gap-20">
+          <div>
+            <h3 className="eyebrow">Nous trouver</h3>
+            <p className="mt-3 font-display text-3xl font-bold uppercase leading-tight">
+              {site.address.street}
+              <br />
+              <span className="text-lime">
+                {site.address.postalCode} {site.address.city}
+              </span>
+            </p>
+            <p className="mt-3 text-muted">Accueil sur rendez-vous, par téléphone ou par e-mail.</p>
+          </div>
+          <LocationMap />
         </div>
       </div>
     </section>

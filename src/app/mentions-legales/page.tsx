@@ -122,6 +122,14 @@ export default function MentionsLegales() {
 
       <Section id="cookies" title="Cookies">
         <p>Ce site ne dépose aucun cookie de mesure d&apos;audience ni de publicité.</p>
+        <p>
+          La carte de la page d&apos;accueil est fournie par Google Maps. Elle n&apos;est chargée que si vous
+          cliquez sur « Afficher la carte » ; Google peut alors déposer ses propres cookies, régis par la{" "}
+          <a href="https://policies.google.com/privacy?hl=fr" rel="noopener noreferrer" target="_blank" className="text-lime hover:underline">
+            politique de confidentialité de Google
+          </a>
+          .
+        </p>
       </Section>
     </div>
   );

@@ -43,6 +43,7 @@ const structuredData = {
         addressCountry: site.address.country,
       },
       foundingDate: "2026-03-01",
+      hasMap: site.mapsUrl,
       url: site.url,
       logo: absoluteUrl("/icon.svg"),
       image: absoluteUrl("/images/facade-bms.jpg"),
