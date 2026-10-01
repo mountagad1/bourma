@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="border-t border-white/[0.08] bg-navy py-14">
       <div className="container-site grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <Link href="/" aria-label="Bourra Multiservices — accueil" className="inline-block">
+          <Link href="/" aria-label="Boura Multiservices — accueil" className="inline-block">
             <Logo withSignature decorative className="h-auto w-40" />
           </Link>
           <p className="mt-5 max-w-xs font-display text-lg font-semibold uppercase leading-snug tracking-[0.04em]">

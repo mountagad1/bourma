@@ -34,7 +34,7 @@ export function Hero() {
             className="hero-in mt-6 max-w-[34rem] text-lg leading-relaxed text-muted sm:text-xl"
             style={{ ["--i" as string]: 3 }}
           >
-            Enseignes, signalétique, agencement et fermetures&nbsp;: Bourra Multiservices vous accompagne
+            Enseignes, signalétique, agencement et fermetures&nbsp;: Boura Multiservices vous accompagne
             dans vos projets professionnels.
           </p>
 
@@ -71,7 +71,7 @@ export function Hero() {
           <div className="hero-media relative aspect-[4/5] overflow-hidden rounded-[var(--radius)] bg-surface sm:aspect-[5/6] lg:aspect-[4/5] lg:max-h-[calc(100svh-var(--header-h)-6rem)] lg:w-auto">
             <Image
               src="/images/facade-bms.jpg"
-              alt="Façade de Bourra Multiservices : enseigne en lettres découpées vertes et blanches et panneaux présentant les services"
+              alt="Façade de Boura Multiservices : enseigne en lettres découpées vertes et blanches et panneaux présentant les services"
               fill
               preload
               sizes="(min-width: 1024px) 40vw, (min-width: 640px) 34rem, 100vw"

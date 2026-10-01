@@ -18,7 +18,7 @@ export function About() {
           </h2>
           <div className="reveal mt-8 max-w-2xl space-y-5 text-lg leading-relaxed text-muted">
             <p>
-              Bourra Multiservices (BMS) accompagne les commerces et les professionnels dans tout ce qui fait
+              Boura Multiservices (BMS) accompagne les commerces et les professionnels dans tout ce qui fait
               l&apos;image et le bon fonctionnement de leurs locaux&nbsp;: enseignes lumineuses et non lumineuses,
               signalétique intérieure et extérieure, agencement de magasins, stores bannes et fermetures.
             </p>

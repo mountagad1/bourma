@@ -85,6 +85,13 @@ export default function MentionsLegales() {
           <Row label="Hébergeur">{legal.host?.name ?? <Missing />}</Row>
           <Row label="Adresse">{legal.host?.address ?? <Missing />}</Row>
           {legal.host?.phone && <Row label="Téléphone">{legal.host.phone}</Row>}
+          {legal.host?.website && (
+            <Row label="Site web">
+              <a href={legal.host.website} rel="noopener" className="hover:text-lime">
+                {legal.host.website.replace("https://", "")}
+              </a>
+            </Row>
+          )}
         </dl>
       </Section>
 

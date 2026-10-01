@@ -60,13 +60,13 @@ export const services: Service[] = [
     meta: {
       title: "Enseignes lumineuses et non lumineuses",
       description:
-        "Enseignes lumineuses et non lumineuses pour commerces et locaux professionnels : conception, fabrication et pose par Bourra Multiservices. Demandez un devis.",
+        "Enseignes lumineuses et non lumineuses pour commerces et locaux professionnels : conception, fabrication et pose par Boura Multiservices. Demandez un devis.",
     },
     page: {
       h1: "Enseignes lumineuses et non lumineuses",
       intro: [
         "L'enseigne est souvent le premier contact entre votre établissement et vos clients. Elle doit être lisible de loin, fidèle à votre identité visuelle et adaptée à votre façade.",
-        "Bourra Multiservices réalise des enseignes lumineuses et non lumineuses pour les commerces, bureaux et locaux professionnels, de l'étude du projet jusqu'à la pose.",
+        "Boura Multiservices réalise des enseignes lumineuses et non lumineuses pour les commerces, bureaux et locaux professionnels, de l'étude du projet jusqu'à la pose.",
       ],
       offer: [
         {
@@ -118,13 +118,13 @@ export const services: Service[] = [
     meta: {
       title: "Signalétique intérieure et extérieure",
       description:
-        "Signalétique intérieure et extérieure pour locaux professionnels : orientation, information et identification de vos espaces. Contactez Bourra Multiservices.",
+        "Signalétique intérieure et extérieure pour locaux professionnels : orientation, information et identification de vos espaces. Contactez Boura Multiservices.",
     },
     page: {
       h1: "Signalétique intérieure et extérieure",
       intro: [
         "Une bonne signalétique permet à vos visiteurs de trouver rapidement leur chemin et donne une image ordonnée de vos locaux.",
-        "Bourra Multiservices conçoit et installe des éléments de signalétique pour l'intérieur comme pour l'extérieur de vos bâtiments professionnels.",
+        "Boura Multiservices conçoit et installe des éléments de signalétique pour l'intérieur comme pour l'extérieur de vos bâtiments professionnels.",
       ],
       offer: [
         {
@@ -184,7 +184,7 @@ export const services: Service[] = [
       h1: "Agencement de magasins",
       intro: [
         "L'aménagement d'un point de vente influence directement la circulation des clients et la mise en valeur de vos produits.",
-        "Bourra Multiservices vous accompagne dans l'agencement de vos espaces commerciaux, en cohérence avec votre activité et votre identité visuelle.",
+        "Boura Multiservices vous accompagne dans l'agencement de vos espaces commerciaux, en cohérence avec votre activité et votre identité visuelle.",
       ],
       offer: [
         {
@@ -227,13 +227,13 @@ export const services: Service[] = [
     meta: {
       title: "Stores bannes pour commerces et professionnels",
       description:
-        "Pose et maintenance de stores bannes pour vitrines, terrasses et façades professionnelles. Protection solaire et confort : contactez Bourra Multiservices.",
+        "Pose et maintenance de stores bannes pour vitrines, terrasses et façades professionnelles. Protection solaire et confort : contactez Boura Multiservices.",
     },
     page: {
       h1: "Stores bannes",
       intro: [
         "Un store banne protège votre vitrine, votre terrasse ou vos espaces extérieurs du soleil, tout en participant à l'apparence de votre façade.",
-        "Bourra Multiservices assure la pose et la maintenance de stores bannes pour les commerces et locaux professionnels.",
+        "Boura Multiservices assure la pose et la maintenance de stores bannes pour les commerces et locaux professionnels.",
       ],
       offer: [
         {
@@ -276,13 +276,13 @@ export const services: Service[] = [
     meta: {
       title: "Rideaux métalliques : pose et maintenance",
       description:
-        "Rideaux métalliques pour commerces et locaux professionnels : installation, maintenance et dépannage. Sécurisez votre devanture avec Bourra Multiservices.",
+        "Rideaux métalliques pour commerces et locaux professionnels : installation, maintenance et dépannage. Sécurisez votre devanture avec Boura Multiservices.",
     },
     page: {
       h1: "Rideaux métalliques",
       intro: [
         "Le rideau métallique protège votre vitrine et vos locaux en dehors des heures d'ouverture. Son bon fonctionnement est essentiel au quotidien.",
-        "Bourra Multiservices intervient pour la pose, l'entretien et la réparation de rideaux métalliques sur les locaux professionnels.",
+        "Boura Multiservices intervient pour la pose, l'entretien et la réparation de rideaux métalliques sur les locaux professionnels.",
       ],
       offer: [
         {
@@ -328,13 +328,13 @@ export const services: Service[] = [
     meta: {
       title: "Portes sectionnelles pour bâtiments professionnels",
       description:
-        "Portes sectionnelles pour entrepôts, ateliers et garages professionnels : installation et maintenance par Bourra Multiservices. Demandez un devis.",
+        "Portes sectionnelles pour entrepôts, ateliers et garages professionnels : installation et maintenance par Boura Multiservices. Demandez un devis.",
     },
     page: {
       h1: "Portes sectionnelles",
       intro: [
         "La porte sectionnelle s'ouvre verticalement en remontant sous le plafond : elle libère l'espace devant l'ouverture, ce qui en fait une solution pratique pour les ateliers, entrepôts et garages.",
-        "Bourra Multiservices assure l'installation et la maintenance de portes sectionnelles pour vos bâtiments professionnels.",
+        "Boura Multiservices assure l'installation et la maintenance de portes sectionnelles pour vos bâtiments professionnels.",
       ],
       offer: [
         {
@@ -376,13 +376,13 @@ export const services: Service[] = [
     meta: {
       title: "Pose et maintenance d'équipements professionnels",
       description:
-        "Pose et maintenance d'enseignes, stores bannes, rideaux métalliques et portes sectionnelles. Bourra Multiservices intervient sur vos équipements professionnels.",
+        "Pose et maintenance d'enseignes, stores bannes, rideaux métalliques et portes sectionnelles. Boura Multiservices intervient sur vos équipements professionnels.",
     },
     page: {
       h1: "Pose et maintenance de vos équipements",
       intro: [
         "Un équipement bien installé et régulièrement entretenu dure plus longtemps et vous évite des interruptions d'activité.",
-        "Bourra Multiservices assure la pose et la maintenance des équipements qui font fonctionner votre devanture et vos locaux : enseignes, stores, rideaux métalliques et portes sectionnelles.",
+        "Boura Multiservices assure la pose et la maintenance des équipements qui font fonctionner votre devanture et vos locaux : enseignes, stores, rideaux métalliques et portes sectionnelles.",
       ],
       offer: [
         {

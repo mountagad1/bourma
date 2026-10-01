@@ -8,9 +8,9 @@ import { ServicesIndex } from "@/components/ServicesIndex";
 import { services } from "@/content/services";
 import { absoluteUrl, jsonLd, site } from "@/lib/site";
 
-const title = "Bourra Multiservices | Enseignes, Signalétique et Fermetures";
+const title = "Boura Multiservices | Enseignes, Signalétique et Fermetures";
 const description =
-  "Découvrez Bourra Multiservices, au Mans : enseignes, signalétique, agencement de magasins, stores bannes, rideaux métalliques et portes sectionnelles. Contactez-nous pour votre projet.";
+  "Découvrez Boura Multiservices, au Mans : enseignes, signalétique, agencement de magasins, stores bannes, rideaux métalliques et portes sectionnelles. Contactez-nous pour votre projet.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

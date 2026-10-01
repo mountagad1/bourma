@@ -22,11 +22,11 @@ const barlowCondensed = Barlow_Condensed({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Bourra Multiservices | Enseignes, Signalétique et Fermetures",
-    template: "%s | Bourra Multiservices",
+    default: "Boura Multiservices | Enseignes, Signalétique et Fermetures",
+    template: "%s | Boura Multiservices",
   },
   description:
-    "Découvrez Bourra Multiservices, au Mans : enseignes, signalétique, agencement de magasins, stores bannes, rideaux métalliques et portes sectionnelles. Contactez-nous pour votre projet.",
+    "Découvrez Boura Multiservices, au Mans : enseignes, signalétique, agencement de magasins, stores bannes, rideaux métalliques et portes sectionnelles. Contactez-nous pour votre projet.",
   applicationName: site.name,
   formatDetection: { telephone: false },
   openGraph: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: "/images/og-bms.jpg",
         width: 1200,
         height: 630,
-        alt: "Façade et enseigne de Bourra Multiservices",
+        alt: "Façade et enseigne de Boura Multiservices",
       },
     ],
   },

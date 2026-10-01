@@ -41,10 +41,10 @@ export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/[0.07] bg-navy/85 backdrop-blur-md">
       <div className="container-site flex h-[var(--header-h)] items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-3" aria-label="Bourra Multiservices — accueil">
+        <Link href="/" className="flex items-center gap-3" aria-label="Boura Multiservices — accueil">
           <Logo decorative className="h-10 w-auto" />
           <span className="hidden font-display text-[0.8rem] font-semibold uppercase leading-tight tracking-[0.12em] text-muted sm:block">
-            Bourra
+            Boura
             <br />
             <span className="text-lime">M</span>ulti<span className="text-lime">s</span>ervices
           </span>

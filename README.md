@@ -1,6 +1,6 @@
-# Bourra Multiservices (BMS) — site vitrine
+# Boura Multiservices (BMS) — site vitrine
 
-Site Next.js (App Router, TypeScript, Tailwind CSS v4) pour Bourra Multiservices :
+Site Next.js (App Router, TypeScript, Tailwind CSS v4) pour Boura Multiservices :
 enseignes, signalétique, agencement de magasins, stores bannes, rideaux métalliques,
 portes sectionnelles, pose et maintenance.
 
@@ -65,5 +65,5 @@ Copier `.env.example` en `.env.local` (ou définir les variables chez l'héberge
   portes sectionnelles, maintenance — actuellement des illustrations signalées
   « photo à venir »).
 * Zone d'intervention et horaires vérifiés (non publiés).
-* Mentions légales : capital social, directeur de la publication et hébergeur
+* Mentions légales : capital social et directeur de la publication
   (`site.legal` dans `src/lib/site.ts`, affichés « à compléter » d'ici là).

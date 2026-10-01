@@ -1,5 +1,5 @@
 type LogoProps = {
-  /** Affiche la signature « BOURRA MULTISERVICES » sous le monogramme. */
+  /** Affiche la signature « BOURA MULTISERVICES » sous le monogramme. */
   withSignature?: boolean;
   className?: string;
   /** Logo décoratif (le texte est déjà présent à côté). */
@@ -18,7 +18,7 @@ export function Logo({ withSignature = false, className, decorative = false }: L
       className={className}
       role={decorative ? undefined : "img"}
       aria-hidden={decorative || undefined}
-      aria-label={decorative ? undefined : "BMS – Bourra Multiservices"}
+      aria-label={decorative ? undefined : "BMS – Boura Multiservices"}
       focusable="false"
     >
       <path
@@ -49,7 +49,7 @@ export function Logo({ withSignature = false, className, decorative = false }: L
             fill="var(--white)"
             style={{ fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: 18 }}
           >
-            BOURRA <tspan fill="var(--lime)">M</tspan>ULTI<tspan fill="var(--lime)">S</tspan>ERVICES
+            BOURA <tspan fill="var(--lime)">M</tspan>ULTI<tspan fill="var(--lime)">S</tspan>ERVICES
           </text>
           <rect x="8" y="146" width="244" height="3.5" fill="var(--lime)" />
         </>

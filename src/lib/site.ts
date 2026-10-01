@@ -3,9 +3,9 @@
  * N'ajoutez ici que des informations vérifiées.
  */
 export const site = {
-  name: "Bourra Multiservices",
+  name: "Boura Multiservices",
   shortName: "BMS",
-  signature: "BOURRA MULTISERVICES",
+  signature: "BOURA MULTISERVICES",
   tagline: "Donnez de la visibilité à votre image.",
   phone: {
     display: "02 85 05 89 63",
@@ -20,7 +20,7 @@ export const site = {
    * URL publique du site, utilisée pour les URL canoniques, le sitemap et
    * Open Graph. À définir en production via NEXT_PUBLIC_SITE_URL.
    */
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.bourra-multiservices.fr").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.boura-multiservices.fr").replace(/\/$/, ""),
   locale: "fr_FR",
   /** Adresse du siège (avis de situation Insee / extrait RNE). */
   address: {
@@ -42,7 +42,11 @@ export const site = {
     /** Non communiqués : à renseigner avant la mise en ligne. */
     capital: null as string | null,
     publicationDirector: null as string | null,
-    host: null as { name: string; address: string; phone?: string } | null,
+    host: {
+      name: "Vercel Inc.",
+      address: "440 N Barranca Ave #4133, Covina, CA 91723, États-Unis",
+      website: "https://vercel.com",
+    } as { name: string; address: string; phone?: string; website?: string } | null,
   },
 } as const;
 
