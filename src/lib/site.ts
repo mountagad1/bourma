@@ -13,8 +13,8 @@ export const site = {
     international: "+33285058963",
   },
   email: {
-    display: "metalibourra@gmail.com",
-    href: "mailto:metalibourra@gmail.com",
+    display: "metalierboura@gmail.com",
+    href: "mailto:metalierboura@gmail.com",
   },
   /**
    * URL publique du site, utilisée pour les URL canoniques, le sitemap et
