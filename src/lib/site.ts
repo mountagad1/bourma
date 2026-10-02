@@ -8,9 +8,9 @@ export const site = {
   signature: "BOURA MULTISERVICES",
   tagline: "Donnez de la visibilité à votre image.",
   phone: {
-    display: "02 85 05 89 63",
-    href: "tel:+33285058963",
-    international: "+33285058963",
+    display: "02 85 85 89 63",
+    href: "tel:+33285858963",
+    international: "+33285858963",
   },
   email: {
     display: "metalierboura@gmail.com",
